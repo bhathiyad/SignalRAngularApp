@@ -47,6 +47,7 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { ViewMeetingsComponent } from './meeting/viewmeetings.component';
 import { LoginComponent } from './login/login.component';
 import { BasicLayoutComponent } from './layouts/basicLayout.component';
+import { BlankLayoutComponent } from './layouts/blankLayout.component';
 import { InterceptorService } from './interceptor/interceptor.service';
 import { AuthResponseInterceptor } from './interceptor/auth.response.interceptor';
 import { TokenManager } from './login/tokenManager';
@@ -61,7 +62,8 @@ import { LoginService } from './login/login.service';
     FetchDataComponent,
     ViewMeetingsComponent,
     LoginComponent,
-    BasicLayoutComponent
+    BasicLayoutComponent,
+    BlankLayoutComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),

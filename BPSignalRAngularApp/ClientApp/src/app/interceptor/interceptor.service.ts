@@ -11,11 +11,11 @@ import { HttpHeaders } from '@angular/common/http';
 import { TokenManager } from "../login/tokenManager";
 import { LoginService } from '../login/login.service';
 import { Observable, BehaviorSubject} from 'rxjs';
-import { _throw } from 'rxjs/observable/throw';
-import { map, catchError, finalize, flatMap } from 'rxjs/operators';
-import { switchMap } from 'rxjs/operator/switchMap';
-import { filter } from 'rxjs/operator/filter';
-import { take } from 'rxjs/operator/take';
+//import { _throw } from 'rxjs/observable/throw';
+//import { map, catchError, finalize, flatMap } from 'rxjs/operators';
+//import { switchMap } from 'rxjs/operator/switchMap';
+//import { filter } from 'rxjs/operator/filter';
+//import { take } from 'rxjs/operator/take';
 
 @Injectable()
 export class InterceptorService implements HttpInterceptor {
