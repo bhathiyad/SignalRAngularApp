@@ -1,0 +1,42 @@
+<h1>View Meetings</h1>
+
+<p>View Meetings Component.</p>
+
+<div class="container-fluid">
+
+  <!--<mat-grid-list cols="4" rowHeight="3:2">
+    <mat-grid-tile>
+      <mat-grid-tile-header>
+        <h3>#2: (1r x 1c)</h3>
+      </mat-grid-tile-header>
+      <div style="width:200px">Meeting category <br /> (Meeting) <br /> Venue</div>
+      <mat-grid-tile-footer>
+        <h3>Meeting status Date</h3>
+      </mat-grid-tile-footer>
+    </mat-grid-tile>
+    <mat-grid-tile>2</mat-grid-tile>
+    <mat-grid-tile>3</mat-grid-tile>
+    <mat-grid-tile>4</mat-grid-tile>
+    <mat-grid-tile>1</mat-grid-tile>
+    <mat-grid-tile>2</mat-grid-tile>
+    <mat-grid-tile>3</mat-grid-tile>
+    <mat-grid-tile>4</mat-grid-tile>
+  </mat-grid-list>-->
+  <!--<mat-grid-list cols="4" rowHeight="3:2" *ngFor="let meeting of meetingList">
+    <mat-grid-tile>1</mat-grid-tile>
+  </mat-grid-list>-->
+
+  <div class="row">
+    <ul id="" class="col-md-4 col-xs-6" *ngFor="let meeting of meetingList">
+      <li class="thumbnail" style="height:80px">
+        <!--<img src="{{phone.img}}" alt="" />-->
+        <div class="caption">
+          <p><b>{{meeting.subCategoryModel.name}}</b></p>
+          <p>{{meeting.date}}</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+</div>
+

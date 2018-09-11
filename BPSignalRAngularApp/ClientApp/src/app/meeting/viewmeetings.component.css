@@ -1,0 +1,20 @@
+mat-grid-tile {
+  background: lightblue;
+  align-content: stretch;
+}
+.fade .thumbnail.li {
+  transition: all 0.4s ease-out;
+  opacity: 0;
+  height: 2em;
+  background: #de1719;
+}
+
+.fade .thumbnail.li.show {
+  opacity: 1;
+  background-color: #7fb5e4;
+}
+
+.thumbnail {
+  background-color: #7fb5e4;
+  border: 1.5px solid #080808;
+}
