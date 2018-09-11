@@ -41,7 +41,7 @@ export class LoginService {
     var refreshToken = tokenObj != null ? tokenObj.refreshToken : null;
     var id = tokenObj.accessToken.id;
 
-    var url = "https://localhost:44354/api/auth/auth";
+    var url = "https://bpnewapi.azurewebsites.net/api/auth/auth"; //https://localhost:44354/api/auth/auth
     var data = {
       client_id: id,
       // required when signing up with username/password
