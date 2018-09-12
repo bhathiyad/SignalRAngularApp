@@ -12,7 +12,7 @@ export class ViewMeetingsService {
 
   constructor(private _http: HttpClient) {
 
-    this._productUrl = "https://localhost:44314/api/meeting"; //"https://localhost:44354/api/meeting"//this._appSettingService.getSettings().serverWithAPIUrl + 'group/';
+    this._productUrl = "https://bpangular.azurewebsites.net/api/meeting"; //https://localhost:44314/api/meeting  //"https://localhost:44354/api/meeting"//this._appSettingService.getSettings().serverWithAPIUrl + 'group/';
     this._headers = new HttpHeaders();
     this._headers.append('Content-Type', 'application/json');
     this._headers.append('Cache-Control', 'no-cache');

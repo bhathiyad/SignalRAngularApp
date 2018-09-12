@@ -39,7 +39,7 @@ export class ViewMeetingsComponent implements OnInit {
 
     //SignalR event bindings
     this._hubConnection = new signalR.HubConnectionBuilder()
-      .withUrl('https://localhost:44354/synchub')
+      .withUrl('https://bpnewapi.azurewebsites.net/synchub') //https://localhost:44354/synchub
       .configureLogging(signalR.LogLevel.Trace)
       .build();
 

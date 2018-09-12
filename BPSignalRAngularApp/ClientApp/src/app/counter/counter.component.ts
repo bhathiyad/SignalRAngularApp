@@ -31,7 +31,7 @@ export class CounterComponent implements OnInit {
 
   ngOnInit() {
     this._hubConnection = new signalR.HubConnectionBuilder()
-      .withUrl('https://localhost:44354/synchub')
+      .withUrl('https://bpnewapi.azurewebsites.net/synchub')//https://localhost:44354/
       .configureLogging(signalR.LogLevel.Trace)
       .build();
 
