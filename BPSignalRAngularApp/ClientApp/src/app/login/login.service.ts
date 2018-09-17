@@ -20,7 +20,7 @@ export class LoginService {
               private _tokenManager: TokenManager,
               @Inject(PLATFORM_ID) private platformId: any) {
 
-    this._productUrl = "https://localhost:44354/api/auth/auth"; //https://localhost:44354/api/auth/login
+    this._productUrl = "https://bpnewapi.azurewebsites.net/api/auth/auth"; //https://localhost:44354/api/auth/login
     this._headers = new HttpHeaders();
     this._headers.append('Content-Type', 'application/json');
     this._headers.append('Cache-Control', 'no-cache');
